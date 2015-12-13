@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,600,500,700);
+
+$blue-95: #096cf1;
+$border-radius-px: 8px;
+$dark: #333333;
+
+@mixin border-radius($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin transition-fade($time){
+	-moz-transition: all $time ease;
+  -o-transition: all $time ease;
+  -webkit-transition: all $time ease;
+  transition: all $time ease;
+}
+
+body{
+	font-family:"Poppins";
+	background-color: #f4f4f4;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  padding-top:40px;
+}
+
+.number-square{
+	width: 30vw;
+	position: relative;
+	height: 30vw;
+	text-align: center;
+	@include border-radius(2px);
+	@include transition-fade(0.5s);
+	background-color: $blue-95;
+	-webkit-box-shadow: 0px 32px 104px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 32px 104px 3px rgba(0,0,0,0.5);
+	box-shadow: 0px 32px 104px 3px rgba(0,0,0,0.5);
+	p{
+		font-size: 35px;
+		font-weight: 300;
+		color: white;
+		position: absolute;
+		top: 50%;
+  		transform: translateY(-50%);
+  		left: 0;
+  		right:0;
+  		@include transition-fade(0.2s);
+	}
+}
+
+.number-square:hover{
+	background-color: #0D58BD;
+	p{
+		font-size: 38px;
+	}
+}
