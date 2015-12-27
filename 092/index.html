@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="Carlos Roso">
+
+	<title>Day 092</title>
+
+	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/main_style.css"/>
+	<link rel="stylesheet" href="libs/components-font-awesome/css/font-awesome.css"/>
+	<!-- Custom CSS -->
+
+	<body>
+		<div class = "container">
+
+			<div class = "summary-wrapper">
+				<div class = "net-earnings-div">
+					<span class = "num">$<span id = "net-earnings">9.88</span></span>
+					<span class = "text-uppercase label">Net earnings</span>
+				</div>
+				<div class = "gross-div">
+					<div class = "row">
+						<div class = "col-sm-6">
+							<span class = "text-uppercase label">Gross</span>
+							<span class = "num">+ $<span id = "gross">15.20</span></span>
+						</div>
+						<div class = "col-sm-6">
+							<span class = "text-uppercase label">Fees</span>
+							<span class = "num">- $<span id = "fees">5.32</span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "details-wrapper">
+				<div class = "tab-menu">
+					<div class = "row">
+						<div class = "col-sm-3">
+							<div class = "tab-item active" id = "tab-1">
+								Last 30 Days
+							</div>
+						</div>
+						<div class = "col-sm-3">
+							<div class = "tab-item" id = "tab-2">
+								Sept 2015
+							</div>
+						</div>
+						<div class = "col-sm-3">
+							<div class = "tab-item" id = "tab-3">
+								Aug 2015
+							</div>
+						</div>
+						<div class = "col-sm-3">
+							<div class = "tab-item" id = "tab-4">
+								More
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class = "table-wrapper">
+					<table cellspacing="0px">
+						<thead>
+							<tr>
+								<th>Order ID</th>
+								<th>Type</th>
+								<th>Price</th>
+								<th>Amount</th>
+							</tr>
+						</thead>
+						<tbody id = "body-1">
+							<tr>
+								<td>17969161</td>
+								<td>Purchase</td>
+								<td>
+									<div class = "double-cell">
+										<span>$1.60</span>
+										<span class = "vat">+$0.38 EU VAT</span>
+									</div>
+								</td>
+								<td>$-1.98</td>
+							</tr>
+							<tr>
+								<td>17967699</td>
+								<td>Purchase</td>
+								<td>
+									<div class = "double-cell">
+										<span>$2.40</span>
+										<span class = "vat">+$0.58 EU VAT</span>
+									</div>
+								</td>
+								<td>$-2.98</td>
+							</tr>
+							<tr>
+								<td>17945290</td>
+								<td>Author Fee</td>
+								<td>
+									<div class = "double-cell">
+										<span>$0.84</span>
+									</div>
+								</td>
+								<td>$-0.84</td>
+							</tr>
+							<tr>
+								<td>17945290</td>
+								<td>Sale</td>
+								<td>
+									<div class = "double-cell">
+										<span>$2.40</span>
+									</div>
+								</td>
+								<td>$2.40</td>
+							</tr>
+						</tbody>
+						<tbody id = "body-2" style = "display:none">
+							<tr>
+								<td>17849162</td>
+								<td>Author Fee</td>
+								<td>
+									<div class = "double-cell">
+										<span>$1.38</span>
+									</div>
+								</td>
+								<td>$2.32</td>
+							</tr>
+							<tr>
+								<td>17934219</td>
+								<td>Purchase</td>
+								<td>
+									<div class = "double-cell">
+										<span>$1.21</span>
+										<span class = "vat">+$0.98 EU VAT</span>
+									</div>
+								</td>
+								<td>$-0.12</td>
+							</tr>
+							<tr>
+								<td>17942341</td>
+								<td>Sale</td>
+								<td>
+									<div class = "double-cell">
+										<span>$4.02</span>
+									</div>
+								</td>
+								<td>$-2.32</td>
+							</tr>
+							<tr>
+								<td>17432310</td>
+								<td>Purchase</td>
+								<td>
+									<div class = "double-cell">
+										<span>$2.40</span>
+										<span class = "vat">+$1.14 EU VAT</span>
+									</div>
+								</td>
+								<td>$1.03</td>
+							</tr>
+						</tbody>
+						<tbody id = "body-3" style = "display:none">
+							<tr >
+								<td>17762442</td>
+								<td>Purchase</td>
+								<td>
+									<div class = "double-cell">
+										<span>$0.35</span>
+										<span class = "vat">+$0.99 EU VAT</span>
+									</div>
+								</td>
+								<td>$-1.98</td>
+							</tr>
+							<tr>
+								<td>17652476</td>
+								<td>sale</td>
+								<td>
+									<div class = "double-cell">
+										<span>$2.76</span>
+									</div>
+								</td>
+								<td>$4.05</td>
+							</tr>
+							<tr>
+								<td>17761457</td>
+								<td>Purchase</td>
+								<td>
+									<div class = "double-cell">
+										<span>$2.33</span>
+										<span class = "vat">+$0.29 EU VAT</span>
+									</div>
+								</td>
+								<td>$2.32</td>
+							</tr>
+							<tr>
+								<td>17675377</td>
+								<td>Author Fee</td>
+								<td>
+									<div class = "double-cell">
+										<span>$1.21</span>
+									</div>
+								</td>
+								<td>$-1.99</td>
+							</tr>
+						</tbody>
+						<tbody id = "body-4" style = "display:none">
+							<tr >
+								<td>17552775</td>
+								<td>Author Fee</td>
+								<td>
+									<div class = "double-cell">
+										<span>$0.63</span>
+									</div>
+								</td>
+								<td>$-1.98</td>
+							</tr>
+							<tr>
+								<td>17564265</td>
+								<td>Purchase</td>
+								<td>
+									<div class = "double-cell">
+										<span>$3.23</span>
+										<span class = "vat">+$1.77 EU VAT</span>
+									</div>
+								</td>
+								<td>$-3.52</td>
+							</tr>
+							<tr>
+								<td>17657765</td>
+								<td>Purchase</td>
+								<td>
+									<div class = "double-cell">
+										<span>$0.99</span>
+										<span class = "vat">+$2.87 EU VAT</span>
+									</div>
+								</td>
+								<td>$-0.84</td>
+							</tr>
+							<tr>
+								<td>17765377</td>
+								<td>Sale</td>
+								<td>
+									<div class = "double-cell">
+										<span>$3.99</span>
+									</div>
+								</td>
+								<td>$0.95</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+
+		<script src="libs/jquery/dist/jquery.min.js"></script>
+		<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="js/custom.js"></script>	
+	</body>
+
+</head>
+</html>
