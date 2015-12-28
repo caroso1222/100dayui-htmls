@@ -87,7 +87,7 @@ $({someValue: 0}).animate({someValue: 15}, {
 });
 
 // Animate the element's value from x to y:
-$({someValue: 0}).animate({someValue: 15}, {
+$({someValue: 0}).animate({someValue: 5}, {
   duration: 500,
       easing:'swing', // can be anything
       step: function() { // called on every step
