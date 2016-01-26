@@ -9,7 +9,7 @@ body {
   z-index: 2;
   position: relative;
   background-color: #7c73d3;
-  width: 40%;
+  width: 45%;
   margin: auto;
   margin-top: 70px;
   padding-top: 40px;
@@ -69,7 +69,7 @@ body {
   z-index: 1;
   position: relative;
   background-color: white;
-  width: 46%;
+  width: 51%;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   -ms-border-radius: 3px;
